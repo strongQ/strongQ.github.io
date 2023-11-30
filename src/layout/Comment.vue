@@ -45,8 +45,8 @@ onMounted(() => {
     client_id,
     client_secret,
     owner: "zhangqi212121_21_admin",
-    repo: "transport",
-    prefix: "[transport]",
+    repo: "comment",
+    prefix: "[comment]",
   })
   inst.mount(commentRef.value)
 })
