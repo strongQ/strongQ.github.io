@@ -203,7 +203,7 @@ export default defineConfig({
       },
     ],
     editLink: {
-      pattern: "https://github.com/tomiaa12/kyx/edit/main/vitepress/src/:path",
+      pattern: "https://github.com/strongQ/strongQ.github.io/tree/main/src/:path",
       text: "在 GitHub 编辑此页",
     },
     nav: [
