@@ -6,6 +6,14 @@ export const Blazor = {
    
   ],
 }
+export const AvaloniaXT = {
+  text: "AvaloniaXT",
+  collapsed: true,
+  items: [
+    { text: "Avalonia桌面框架", link: "/docs/框架/AvaloniaXT/AvaloniaXT桌面框架" },
+   
+  ],
+}
 export const NetCore={
   text:"NetCore",
   collapsed:true,

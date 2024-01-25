@@ -22,6 +22,7 @@ import {
   Pixi,
   Blazor,
   NetCore,
+  AvaloniaXT,
   Nuxt3,
   React,
   Openlayers,
@@ -239,6 +240,7 @@ export default defineConfig({
         items: [
           NetCore,
           Blazor,
+          AvaloniaXT,
           Pixi,
           Vue3,
           Vue2,
@@ -287,6 +289,7 @@ export default defineConfig({
       "/docs/框架/": [
         NetCore,
         Blazor,
+        AvaloniaXT,
         Pixi,
         Vue3,
         Vue2,
