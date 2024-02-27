@@ -12,7 +12,7 @@ dotnet add package AvaloniaXT --version 1.0.0
 - SukiUI [引用的SukiUI项目](https://github.com/kikipoulet/SukiUI) 修改了ProgressBar的MiniHeight、添加一些控件。
 
 # 系统界面
-![systemimage](Images/AvaloniaXT.png)
+![systemimage](img/AvaloniaXT.png)
 
 # 国际化支持
 ```
