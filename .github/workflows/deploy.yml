@@ -9,16 +9,25 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # 拉取代码
       - uses: actions/checkout@v2
+
+      # 设置 Node.js 版本（推荐 18 或 20）
       - uses: actions/setup-node@v3
         with:
-          node-version: 18   # 改成 18 或 20
-      - run: npm i pnpm -g
-      - run: pnpm install --frozen-lockfile
+          node-version: 18
 
+      # 安装 pnpm（指定版本更稳定，比如 v8）
+      - run: npm install -g pnpm@8
+
+      # 安装依赖（如果没有 pnpm-lock.yaml 就用 --no-frozen-lockfile）
+      - run: pnpm install --no-frozen-lockfile
+
+      # 构建
       - name: Build
         run: pnpm run build
 
+      # 部署到 GitHub Pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
